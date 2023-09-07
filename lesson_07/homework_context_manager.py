@@ -5,13 +5,13 @@ from pathlib import Path
 
 class TimerContext:
     def __enter__(self):
-        self.start_time = time.time()
+        self.start_time = time.perf_counter()
         logging.info("Program was started")
         # сделала скорее для себя, для понимания работы
 
     def __exit__(self, exc_type, exc_value, traceback):
         # logger.info(...)
-        end_time = time.time() - self.start_time
+        end_time = time.perf_counter() - self.start_time
         # print(f"End time: {end_time}")
         logging.info(f"Program was completed, runtime - {end_time}")
 
