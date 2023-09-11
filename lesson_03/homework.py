@@ -19,9 +19,7 @@ def get_lines_with_user(filename: Path, word: str) -> Generator:
 
 
 for line in get_lines_with_user(analyzed_file, "user"):
-    decision = input(
-        f"Do you want to add line {line} to results? Yes -y, No - n: "
-    )
+    decision = input(f"Do you want to add line {line} to results? Yes -y, No - n: ")
     if decision == "y":
         results.append(line)
         print(f"Line: {line} is added")
