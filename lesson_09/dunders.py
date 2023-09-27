@@ -33,7 +33,9 @@ class UserFactory:
 
     @property
     def random_password(self):
-        return "".join([random.choice(string.ascii_letters) for _ in range(10)])
+        return "".join(
+            [random.choice(string.ascii_letters) for _ in range(10)]
+        )
 
     def _init_users(self):
         self._users = {

@@ -12,7 +12,9 @@ class User:
 
     @classmethod
     def create_user_with_temp_password(cls, username: str):
-        temp_chars: list[str] = [random.choice(string.ascii_letters) for _ in range(10)]
+        temp_chars: list[str] = [
+            random.choice(string.ascii_letters) for _ in range(10)
+        ]
         temp_passwords = "".join(temp_chars)
         cls.TOTAL_USERS += 1
 
