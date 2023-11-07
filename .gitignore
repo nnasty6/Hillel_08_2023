@@ -4,3 +4,4 @@ venv
 rockyou.txt
 .vscode/
 *.jpg
+*.db

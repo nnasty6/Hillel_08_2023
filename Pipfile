@@ -5,6 +5,11 @@ name = "pypi"
 
 [packages]
 requests = "~=2.31"
+schedule = "~=1.2"
+aiohttp = "~=3.8"
+beautifulsoup4 = "~=4.12"
+lxml = "~=4.9"
+aiosqlite = "~=0.19"
 
 [dev-packages]
 black = "~=23.7"
